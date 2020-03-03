@@ -61,7 +61,7 @@ Author URI: https://www.zymantaskatinas.com
             'Pirma kraštinė - '.rgar($entry, '3').
             '<br>Antra kraštinė - '.rgar($entry, '4').
             '<br>Trečia kraštinė - '.rgar($entry, '5').
-            '<br>Pusperimetris - '.rgar($entry, '6'),
+            '<hr>Pusperimetris - <strong>'.rgar($entry, '6').'</strong>',
         'post_status' => 'publish',
         'post_type' => 'post'
     );
