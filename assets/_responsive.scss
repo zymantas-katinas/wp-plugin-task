@@ -4,11 +4,13 @@
         padding: 2em 1em;
         &__edge {
             flex-direction: column;
+            & label {
+                text-align: center;
+            }
         }   
     
         &__final {
             flex-direction: column;
         }
-
     }
 }

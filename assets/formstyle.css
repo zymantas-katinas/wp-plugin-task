@@ -13,6 +13,12 @@
   text-align: center;
 }
 
+.triangle h3, .triangle input, .triangle label, .triangle div {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .triangle__edge {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,12 +80,6 @@
   outline: none;
 }
 
-.triangle h3, .triangle li, .triangle input, .triangle label, .triangle div {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 .triangle .gform_title {
   margin: 0.5em 0 1.5em;
   font-size: 1.8rem;
@@ -104,6 +104,11 @@
           padding-inline-start: 0;
 }
 
+.triangle .gform_footer {
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 600px) {
   .triangle {
     padding: 2em 1em;
@@ -113,6 +118,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .triangle__edge label {
+    text-align: center;
   }
   .triangle__final {
     -webkit-box-orient: vertical;
