@@ -1,0 +1,77 @@
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap");
+
+.gform_validation_container {
+    display: none;
+}
+
+.triangle {
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 4px 24px 3px rgba(0,0,0,0.29);
+    padding: 2em 3em;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    &__edge {
+        & label {
+            font-weight: 300;
+        }
+        & .ginput_container input {
+            text-align: center;
+             border-radius: 10px;
+             &:focus {
+                outline: none;
+                border: 1px solid black;
+            }
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
+
+    }   
+
+    &__final {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.5rem;
+        margin: 1em auto;
+        & .ginput_container input {
+            text-align: center;
+            font-size: 2rem;
+            width: 100%;
+            outline: none;
+            padding: 0;
+            border: none;
+            cursor: default;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    & h3, li, input {
+        font-family: 'Poppins', sans-serif;
+    }
+ 
+    & .gform_title {
+        margin-bottom: 1.5em;
+    }
+
+    & .gform_button {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: ease-in-out 0.3s;
+        &:hover {
+            color: white;
+        }
+    }
+    & .gform_fields {
+        padding-inline-start: 0;
+    }
+}

@@ -32,7 +32,7 @@ Author URI: https://www.zymantaskatinas.com
      }
 
      function enqueue() {
-         wp_enqueue_style( 'style', plugins_url('/assets/newstyle.css', __FILE__) );
+         wp_enqueue_style( 'style', plugins_url('/assets/formstyle.css', __FILE__) );
      }
 
      function addPost(){
@@ -54,12 +54,14 @@ Author URI: https://www.zymantaskatinas.com
 
 
  function create_post_example($entry) {
+    $date = date_create(rgar( $entry, 'date_created' ));
     $post_data = array(
-        'post_title' => rgar( $entry, 'date_created' ). ' pusperimetris - ' .rgar($entry, '6'),
+        'post_title' => date_format($date,"Y-m-d"). ' ' .rgar($entry, '6') * 2,
         'post_content' => 
             'Pirma kraštinė - '.rgar($entry, '3').
             '<br>Antra kraštinė - '.rgar($entry, '4').
-            '<br>Trečia kraštinė - '.rgar($entry, '5'),
+            '<br>Trečia kraštinė - '.rgar($entry, '5').
+            '<br>Pusperimetris - '.rgar($entry, '6'),
         'post_status' => 'publish',
         'post_type' => 'post'
     );
