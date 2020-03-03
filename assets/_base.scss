@@ -15,6 +15,7 @@
     &__edge {
         & label {
             font-weight: 300;
+            width: 100%;
         }
         & .ginput_container input {
             text-align: center;
@@ -51,13 +52,16 @@
         }
     }
 
-    & h3, li, input {
+    & h3, li, input, label, div  {
         font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
     }
  
     & .gform_title {
-        margin-bottom: 1.5em;
-        color: blue;
+        margin: 0.5em 0 1.5em;
+        font-size: 1.8rem;
+        text-align: center;
     }
 
     & .gform_button {

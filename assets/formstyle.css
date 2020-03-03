@@ -32,6 +32,7 @@
 
 .triangle__edge label {
   font-weight: 300;
+  width: 100%;
 }
 
 .triangle__edge .ginput_container input {
@@ -73,13 +74,16 @@
   outline: none;
 }
 
-.triangle h3, .triangle li, .triangle input {
+.triangle h3, .triangle li, .triangle input, .triangle label, .triangle div {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .triangle .gform_title {
-  margin-bottom: 1.5em;
-  color: blue;
+  margin: 0.5em 0 1.5em;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 .triangle .gform_button {
