@@ -4,10 +4,12 @@
 }
 
 .triangle {
+  background-color: white;
   font-family: 'Poppins', sans-serif;
   -webkit-box-shadow: 0px 4px 24px 3px rgba(0, 0, 0, 0.29);
           box-shadow: 0px 4px 24px 3px rgba(0, 0, 0, 0.29);
-  padding: 2em 3em;
+  padding: 2em 15%;
+  margin: 0;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -16,6 +18,7 @@
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  color: black;
 }
 
 .triangle__edge {
@@ -26,13 +29,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1em;
+  margin: 0 0 1em;
 }
 
 .triangle__edge label {
@@ -42,8 +44,10 @@
 }
 
 .triangle__edge .ginput_container input {
+  background: white;
   text-align: center;
   border-radius: 10px;
+  border: 1px solid grey;
 }
 
 .triangle__edge .ginput_container input:focus {
@@ -59,6 +63,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -67,6 +74,7 @@
 }
 
 .triangle__final .ginput_container input {
+  background: white;
   text-align: center;
   font-size: 2rem;
   width: 100%;
@@ -80,8 +88,13 @@
   outline: none;
 }
 
+.triangle__final label {
+  width: 100%;
+  font-weight: 500;
+}
+
 .triangle .gform_title {
-  margin: 0.5em 0 1.5em;
+  margin: 0.5em 0 2em;
   font-size: 1.8rem;
   text-align: center;
 }
@@ -96,10 +109,13 @@
 }
 
 .triangle .gform_button:hover {
+  text-decoration: none;
+  background-color: black;
   color: white;
 }
 
 .triangle .gform_fields {
+  margin: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
 }
@@ -127,6 +143,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .triangle__final label {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=formstyle.css.map */

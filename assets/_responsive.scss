@@ -11,6 +11,9 @@
     
         &__final {
             flex-direction: column;
+            & label {
+                text-align: center;
+            }
         }
     }
 }
