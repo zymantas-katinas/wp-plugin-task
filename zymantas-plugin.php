@@ -36,7 +36,7 @@ Author URI: https://www.zymantaskatinas.com
      }
 
      function addPost(){
-        add_action( 'gform_after_submission', 'create_post_example', 10, 1 );
+        add_action( 'gform_after_submission', 'create_post', 10, 1 );
      }
 
  }
@@ -53,7 +53,7 @@ Author URI: https://www.zymantaskatinas.com
  register_deactivation_hook( __FILE__, array ($zymantasPlugin, 'deactivate'));
 
 
- function create_post_example($entry) {
+ function create_post($entry) {
     $date = date_create(rgar( $entry, 'date_created' ));
     $post_data = array(
         'post_title' => date_format($date,"Y-m-d"). ' ' .rgar($entry, '6') * 2,
@@ -65,7 +65,6 @@ Author URI: https://www.zymantaskatinas.com
         'post_status' => 'publish',
         'post_type' => 'post'
     );
-
     wp_insert_post( $post_data );
 }
 

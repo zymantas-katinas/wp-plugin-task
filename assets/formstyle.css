@@ -10,7 +10,6 @@
   padding: 2em 3em;
   border-radius: 20px;
   overflow: hidden;
-  text-align: center;
 }
 
 .triangle h3, .triangle input, .triangle label, .triangle div {
@@ -37,6 +36,7 @@
 }
 
 .triangle__edge label {
+  text-align: left;
   font-weight: 300;
   width: 100%;
 }
