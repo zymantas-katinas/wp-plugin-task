@@ -38,12 +38,14 @@
 }
 
 .triangle__edge label {
+  padding-right: 1em;
   text-align: left;
   font-weight: 300;
   width: 100%;
 }
 
 .triangle__edge .ginput_container input {
+  width: 100%;
   background: white;
   text-align: center;
   border-radius: 10px;
@@ -123,6 +125,10 @@
 .triangle .gform_footer {
   text-align: center;
   margin: 0 auto;
+}
+
+.triangle .gform_confirmation_message {
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {

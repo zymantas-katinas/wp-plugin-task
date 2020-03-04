@@ -38,7 +38,6 @@ Author URI: https://www.zymantaskatinas.com
      function addPost(){
         add_action( 'gform_after_submission', 'create_post', 10, 1 );
      }
-
  }
 
  if( class_exists('ZymantasPlugin')){
@@ -46,12 +45,12 @@ Author URI: https://www.zymantaskatinas.com
      $zymantasPlugin->register();
      $zymantasPlugin->addPost();
  }
+ 
  //activation
  register_activation_hook( __FILE__, array ($zymantasPlugin, 'activate'));
 
  //deactivation
  register_deactivation_hook( __FILE__, array ($zymantasPlugin, 'deactivate'));
-
 
  function create_post($entry) {
     $date = date_create(rgar( $entry, 'date_created' ));
